@@ -32,4 +32,21 @@ footer {
   padding-top: 100px;
 }
 
+h1, h2, h3, a {
+  font-family: "Lora";
+}
+
+p {
+  font-family: "Open Sans";
+}
+
+.largeurMax {
+  width: 90%;
+  height: 30%;
+}
+
+section p {
+  color: #222831;
+}
+
 /*# sourceMappingURL=index.css.map */
