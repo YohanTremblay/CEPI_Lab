@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Blog</title>
 </head>
-<header>
+
+<body>
+  <header>
     <div class="row justify-content-evenly">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid colorback">
@@ -30,47 +32,19 @@
               <div class="col-lg-1 "><img id="transparent" src="\style\Image\LogoProfile.png" ></div>
             </div>
           </nav>
+      </div> 
+  </header>
+    <div id="contenueBlog">
+        
     </div> 
-</header>
-<body>
-    <div>
-        <div class="text-center">
-            <img class="img-fluid largeurMax " src="\style\Image\imageNotFound.png" alt="Responsive image">  
-        </div> 
-        <div>
-            <h1 class="colorText">Titre Blog</h1>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero repellat eum nihil vitae odio quisquam unde? Maiores esse, ea eius ratione assumenda error nobis fuga quo commodi enim? Recusandae, consequatur?</p>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero repellat eum nihil vitae odio quisquam unde? Maiores esse, ea e Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum alias est libero animi fuga tempora. Itaque ea nisi odit debitis id animi enim tempore excepturi fugit laboriosam deleniti, totam praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi rem ut odit omnis quia ad sunt maxime nihil, placeat optio. Quisquam animi quo et dolore voluptatibus dignissimos fuga laudantium! Illo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quae iure porro obcaecati! Officia quisquam suscipit repudiandae odio veniam porro, debitis consequuntur possimus voluptatem laboriosam incidunt officiis facilis? Temporibus, eaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio necessitatibus praesentium doloribus. Quisquam temporibus numquam tempora placeat quibusdam, modi nobis accusantium beatae dolore! Maiores modi assumenda dignissimos soluta optio consectetur.</p>
-        </div>
-    </div> 
-    <div>
-        <div class="text-center align-self-center">
-            <img class="" src="\style\Image\imageNotFound.png" alt="img-thumbnail">  
-        </div>
-        <div class="text-center  align-self-center">
-            <h3 class="colorText">Caption</h3>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero repellat eum nihil vitae odio quisquam unde? Maiores esse, ea eius ratione assumenda error nobis fuga quo commodi enim? Recusandae, consequatur?</p>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero repellat eum nihil vitae odio quisquam unde? Maiores esse, ea e Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum alias est libero animi fuga tempora. Itaque ea nisi odit debitis id animi enim tempore excepturi fugit laboriosam deleniti, totam praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi rem ut odit omnis quia ad sunt maxime nihil, placeat optio. Quisquam animi quo et dolore voluptatibus dignissimos fuga laudantium! Illo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quae iure porro obcaecati! Officia quisquam suscipit repudiandae odio veniam porro, debitis consequuntur possimus voluptatem laboriosam incidunt officiis facilis? Temporibus, eaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio necessitatibus praesentium doloribus. Quisquam temporibus numquam tempora placeat quibusdam, modi nobis accusantium beatae dolore! Maiores modi assumenda dignissimos soluta optio consectetur.</p>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero repellat eum nihil vitae odio quisquam unde? Maiores esse, ea e Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum alias est libero animi fuga tempora. Itaque ea nisi odit debitis id animi enim tempore excepturi fugit laboriosam deleniti, totam praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi rem ut odit omnis quia ad sunt maxime nihil, placeat optio. Quisquam animi quo et dolore voluptatibus dignissimos fuga laudantium! Illo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quae iure porro obcaecati! Officia quisquam suscipit repudiandae odio veniam porro, debitis consequuntur possimus voluptatem laboriosam incidunt officiis facilis? Temporibus, eaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio necessitatibus praesentium doloribus. Quisquam temporibus numquam tempora placeat quibusdam, modi nobis accusantium beatae dolore! Maiores modi assumenda dignissimos soluta optio consectetur.</p>
-        </div>
-    </div>
+    
     <div class="row">
         <div class="form-group largeurMax col-6 align-self-center"> 
             <label class="colorText" for="Commentaire"><h3>Commentaire</h3></label>
-            <textarea class="form-control" rows="6"></textarea>
+            <textarea id="Commentaire" name="Commentaire" class="form-control" rows="6"></textarea>
         </div>
         <div class="col-4 ">
-            <button type="submit" class="btn btn-primary align-self-end">Submit</button>
+            <button type="submit" class="btn btn-primary align-self-end" onclick="ajoutCommentaire()">Submit</button>
         </div>
     </div>
     <section class="gradient-custom">
@@ -79,157 +53,9 @@
             <div class="col-md-12 col-lg-10 col-xl-8">
               <div class="card">
                 <div class="card-body p-4">
-                  <h4 class="text-center mb-4 pb-2">Nested comments section</h4>
-      
+                  <h4 class="text-center mb-4 pb-2">Zone Commentaire</h4>
                   <div class="row">
-                    <div class="col">
-                      <div class="d-flex flex-start">
-                        <img class="rounded-circle shadow-1-strong me-3"
-                          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar" width="65"
-                          height="65" />
-                        <div class="flex-grow-1 flex-shrink-1">
-                          <div>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <p class="mb-1">
-                                Maria Smantha <span class="small">- 2 hours ago</span>
-                              </p>
-                              <a href="#!"><i class="fas fa-reply fa-xs"></i><span class="small"> reply</span></a>
-                            </div>
-                            <p class="small mb-0">
-                              It is a long established fact that a reader will be distracted by
-                              the readable content of a page.
-                            </p>
-                          </div>
-      
-                          <div class="d-flex flex-start mt-4">
-                            <a class="me-3" href="#">
-                              <img class="rounded-circle shadow-1-strong"
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(11).webp" alt="avatar"
-                                width="65" height="65" />
-                            </a>
-                            <div class="flex-grow-1 flex-shrink-1">
-                              <div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <p class="mb-1">
-                                    Simona Disa <span class="small">- 3 hours ago</span>
-                                  </p>
-                                </div>
-                                <p class="small mb-0">
-                                  letters, as opposed to using 'Content here, content here',
-                                  making it look like readable English.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-      
-                          <div class="d-flex flex-start mt-4">
-                            <a class="me-3" href="#">
-                              <img class="rounded-circle shadow-1-strong"
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-                                width="65" height="65" />
-                            </a>
-                            <div class="flex-grow-1 flex-shrink-1">
-                              <div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <p class="mb-1">
-                                    John Smith <span class="small">- 4 hours ago</span>
-                                  </p>
-                                </div>
-                                <p class="small mb-0">
-                                  the majority have suffered alteration in some form, by
-                                  injected humour, or randomised words.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-      
-                      <div class="d-flex flex-start mt-4">
-                        <img class="rounded-circle shadow-1-strong me-3"
-                          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(12).webp" alt="avatar" width="65"
-                          height="65" />
-                        <div class="flex-grow-1 flex-shrink-1">
-                          <div>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <p class="mb-1">
-                                Natalie Smith <span class="small">- 2 hours ago</span>
-                              </p>
-                              <a href="#!"><i class="fas fa-reply fa-xs"></i><span class="small"> reply</span></a>
-                            </div>
-                            <p class="small mb-0">
-                              The standard chunk of Lorem Ipsum used since the 1500s is
-                              reproduced below for those interested. Sections 1.10.32 and
-                              1.10.33.
-                            </p>
-                          </div>
-      
-                          <div class="d-flex flex-start mt-4">
-                            <a class="me-3" href="#">
-                              <img class="rounded-circle shadow-1-strong"
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" alt="avatar"
-                                width="65" height="65" />
-                            </a>
-                            <div class="flex-grow-1 flex-shrink-1">
-                              <div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <p class="mb-1">
-                                    Lisa Cudrow <span class="small">- 4 hours ago</span>
-                                  </p>
-                                </div>
-                                <p class="small mb-0">
-                                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                                  vestibulum in vulputate at, tempus viverra turpis.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-      
-                          <div class="d-flex flex-start mt-4">
-                            <a class="me-3" href="#">
-                              <img class="rounded-circle shadow-1-strong"
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(29).webp" alt="avatar"
-                                width="65" height="65" />
-                            </a>
-                            <div class="flex-grow-1 flex-shrink-1">
-                              <div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <p class="mb-1">
-                                    Maggie McLoan <span class="small">- 5 hours ago</span>
-                                  </p>
-                                </div>
-                                <p class="small mb-0">
-                                  a Latin professor at Hampden-Sydney College in Virginia,
-                                  looked up one of the more obscure Latin words, consectetur
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-      
-                          <div class="d-flex flex-start mt-4">
-                            <a class="me-3" href="#">
-                              <img class="rounded-circle shadow-1-strong"
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-                                width="65" height="65" />
-                            </a>
-                            <div class="flex-grow-1 flex-shrink-1">
-                              <div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <p class="mb-1">
-                                    John Smith <span class="small">- 6 hours ago</span>
-                                  </p>
-                                </div>
-                                <p class="small mb-0">
-                                  Autem, totam debitis suscipit saepe sapiente magnam officiis
-                                  quaerat necessitatibus odio assumenda, perferendis quae iusto
-                                  labore laboriosam minima numquam impedit quam dolorem!
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="col" id="comment"> 
                     </div>
                   </div>
                 </div>
@@ -238,20 +64,24 @@
           </div>
         </div>
       </section>
+      <footer>
+        <div class="text-center">
+            <div>
+                <a href="#"><i class="col-lg-1 fa fa-facebook"></i></a>
+                <a href="#"><i class="col-lg-1 fa fa-linkedin"></i></a>
+                <a href="#"><i class="col-lg-1 fa fa-twitter"></i></a>
+            </div>
+            <div>
+               <p>CENTRE D'EXPERTISE ET DE PERFECTIONNEMENT EN INFORMATIQUE</p>
+            </div>
+            <div>
+                <p>2022</p> 
+            </div>
+          </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+      <script src="../Javascript/indexBlog.js"></script>
 </body>
-<footer>
-    <div class="text-center">
-        <div>
-            <a href="#"><i class="col-lg-1 fa fa-facebook"></i></a>
-            <a href="#"><i class="col-lg-1 fa fa-linkedin"></i></a>
-            <a href="#"><i class="col-lg-1 fa fa-twitter"></i></a>
-        </div>
-        <div>
-           <p>CENTRE D'EXPERTISE ET DE PERFECTIONNEMENT EN INFORMATIQUE</p>
-        </div>
-        <div>
-            <p>2022</p> 
-        </div>
-    </div>
-</footer>
+
 </html>
