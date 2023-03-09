@@ -2,7 +2,6 @@ const params = new URLSearchParams(window.location.search);
 
 const id = params.get("id");
 
-console.log(id);
 fetch('http://localhost:3000/Publication?id=' + id)
 .then(reponse => reponse.json())
 .then(json =>{
