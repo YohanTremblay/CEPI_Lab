@@ -49,4 +49,12 @@ section p {
   color: #222831;
 }
 
+.commentaire {
+  background-color: #393E46;
+  background-color-border-radius: 15px;
+  background-color-border: solid 2px;
+  background-color-border-style: groove;
+  background-color-border-color: #00ADB5;
+}
+
 /*# sourceMappingURL=index.css.map */

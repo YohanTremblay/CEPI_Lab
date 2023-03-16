@@ -12,31 +12,9 @@
     <title>Page principale</title>
 </head>
 <body>
-    <header>
-        <div class="row justify-content-evenly">
-              <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid colorback">
-                    <div class="col-lg-4 align-self-center"><img src="\style\Image\Logo.PNG" alt="Italian Trulli"></div>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <div class="navbar-nav">
-                        <a class="nav-link active col-5" aria-current="page" href="#">Home</a>
-                        <a class="nav-link col-lg-5" href="#">Menu 1</a>
-                        <a class="nav-link col-lg-5" href="#">Menu 2</a>
-                        <a class="nav-link col-lg-5" href="#">Menu 3</a>
-                        <a class="nav-link col-lg-5" href="#">Menu 4</a>
-                    </div>
-                   
-                    </ul>
-                  </div>
-                  <div class="col-lg-1 "><img id="transparent" src="\style\Image\LogoProfile.png" ></div>
-                </div>
-                
-              </nav>
-        </div> 
-    </header>
+
+    <header id="header"></header> 
+
     <div class="container">
         <div class = "row">
             <div class="col-8">
@@ -63,28 +41,26 @@
     </div>
  
     <div class="container">
-        <div class = "row"  id="Publi">
+        <div class = "row"  id="publi">
             
         </div>
     </div>
 
-    <footer>
-        <div class="text-center">
-            <div>
-                <a href="#"><i class="col-lg-1 fa fa-facebook"></i></a>
-                <a href="#"><i class="col-lg-1 fa fa-linkedin"></i></a>
-                <a href="#"><i class="col-lg-1 fa fa-twitter"></i></a>
-            </div>
-            <div>
-               <p>CENTRE D'EXPERTISE ET DE PERFECTIONNEMENT EN INFORMATIQUE</p>
-            </div>
-            <div>
-                <p>2022</p> 
-            </div>
-        </div>
+    <footer id = "footer">
+        
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-    <script src="../Javascript/indexPagePrincipale.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script src="../components/BlogList.js" type="text/babel"></script>
+    <script src="../components/BlogCard.js" type="text/babel"></script>
+
+    <script src="../components/footer.js" type="text/babel"></script>
+    <script src="../components/header.js" type="text/babel"></script>
+
+    <script src="../Javascript/indexPagePrincipale.js" type="text/babel"></script>
 </body>
 </html>
